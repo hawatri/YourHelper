@@ -97,25 +97,15 @@ function renderProfiles(filteredProfiles) {
 // ======================
 function handleSearch() {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-    const categoryFilter = document.getElementById('categoryFilter').value;
-    const experienceFilter = document.getElementById('experienceFilter').value;
+    const selectedTag = document.querySelector('.tag.active');
+    const categoryFilter = selectedTag ? selectedTag.dataset.category : '';
 
     const filtered = profiles.filter(profile => {
         const matchesSearch = profile.name.toLowerCase().includes(searchTerm) ||
-                            profile.profession.toLowerCase().includes(searchTerm) ||
-                            profile.location.toLowerCase().includes(searchTerm);
-        
+                              profile.profession.toLowerCase().includes(searchTerm) ||
+                              profile.location.toLowerCase().includes(searchTerm);
         const matchesCategory = !categoryFilter || profile.profession === categoryFilter;
-        
-        let matchesExperience = true;
-        if (experienceFilter) {
-            const [min, max] = experienceFilter.split(/\D+/).map(Number);
-            matchesExperience = experienceFilter === '5+ years' ? 
-                profile.experience >= 5 :
-                profile.experience >= min && profile.experience <= max;
-        }
-
-        return matchesSearch && matchesCategory && matchesExperience;
+        return matchesSearch && matchesCategory;
     });
 
     renderProfiles(filtered);
@@ -255,3 +245,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+

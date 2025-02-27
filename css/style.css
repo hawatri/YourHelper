@@ -1081,3 +1081,39 @@ input[type="range"] {
         gap: 0.5rem;
     }
 }
+
+/* Ensure the filters container supports wrapping tags */
+.filters {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap; /* Allow tags to wrap to the next line */
+    gap: 0.5rem; /* Space between tags */
+    justify-content: center; /* Center the tags */
+}
+
+/* Style for each tag */
+.tag {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/* Active state for the selected tag */
+.tag.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+/* Hover effect for tags */
+.tag:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
