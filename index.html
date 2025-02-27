@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labour Connect Pro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<!-- Add this to your HTML before </body> -->
+<div class="hire-panel" id="hirePanel">
+    <div class="panel-header">
+        <h3>Hire Details</h3>
+        <button class="close-btn" id="closePanel">&times;</button>
+    </div>
+    <div class="panel-content">
+        <!-- Profile Section -->
+        <div class="labour-info">
+            <img src="" class="panel-profile" alt="Profile">
+            <div class="profile-meta">
+                <h4 id="labourName"></h4>
+                <p id="labourProfession"></p>
+                <button class="profile-btn" id="viewProfile">View Full Profile</button>
+            </div>
+        </div>
+
+        <!-- Work Gallery -->
+        <div class="work-gallery">
+            <h4>Previous Work</h4>
+            <div class="gallery-grid" id="workGallery"></div>
+        </div>
+
+        <!-- Experience & Reviews -->
+        <div class="details-section">
+            <div class="experience-section">
+                <h4>Experience</h4>
+                <p id="labourExperience"></p>
+                <div class="skill-meter">
+                    <div class="skill-progress"></div>
+                </div>
+            </div>
+
+            <div class="reviews-section">
+                <h4>Reviews <span class="rating-badge" id="labourRating"></span></h4>
+                <div class="reviews-list" id="reviewsList"></div>
+            </div>
+        </div>
+
+        <!-- Payment & Booking -->
+        <form class="hire-form">
+            <div class="form-group">
+                <label>Payment Range (₹)</label>
+                <div class="price-slider">
+                    <input type="range" min="500" max="10000" value="2500" id="priceRange">
+                    <output id="priceValue">₹2500</output>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Booking Date</label>
+                <input type="date" required>
+            </div>
+
+            <button type="submit" class="confirm-hire-btn">Confirm Booking</button>
+        </form>
+    </div>
+</div>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">LabourConnect Pro</div>
+            <div class="nav-right">
+                <button id="themeToggle" class="theme-toggle">🌙</button>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn login-btn">Login</a>
+                    <a href="signup.html" class="btn signup-btn">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="search-container">
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search for labours by name, skill, or location...">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <div class="filters">
+        <select id="categoryFilter" class="filter-dropdown">
+            <option value="">All Categories</option>
+            <option>Electrician</option>
+            <option>Plumber</option>
+            <option>Carpenter</option>
+            <option>Painter</option>
+            <option>Mason</option>
+        </select>
+        
+        <select id="experienceFilter" class="filter-dropdown">
+            <option value="">Experience</option>
+            <option>0-2 years</option>
+            <option>2-5 years</option>
+            <option>5+ years</option>
+        </select>
+    </div>
+
+    <div class="labour-profiles" id="profilesContainer"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
