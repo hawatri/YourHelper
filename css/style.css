@@ -522,11 +522,11 @@ input[type="range"] {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: var(--background-color);
+    background-color: #E5E1DA;
 }
 
 .login-container {
-    background: var(--card-bg);
+    background: #B3C8CF;
     padding: 2rem;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
@@ -598,7 +598,7 @@ input[type="range"] {
 }
 
 .login-links a {
-    color: var(--primary-color);
+    color: #6a8087;
     text-decoration: none;
     font-size: 0.9rem;
 }
