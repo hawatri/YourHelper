@@ -21,13 +21,14 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: #E5E1DA;
     color: var(--text-color);
     transition: background-color 0.3s ease;
 }
 
 .header {
-    background-color: var(--primary-color);
+    
+    background-color: #89A8B2;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
@@ -41,10 +42,13 @@ body {
 }
 
 .logo {
+    background-color: #4B164C;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
     color: white;
 }
+
 
 .nav-right {
     display: flex;
@@ -86,13 +90,13 @@ body {
 
 .header .signup-btn {
     background-color: white;
-    color: var(--primary-color);
+    color:#89A8B2;
     border-color: white;
 }
 
 .header .signup-btn:hover {
     background-color: #e0f2fe;
-    color: var(--secondary-color);
+    color: #79949d;
 }
 
 .theme-toggle {
@@ -128,7 +132,7 @@ body {
 }
 
 .dark-theme .header .signup-btn:hover {
-    background-color: var(--primary-color);
+    background-color: #89A8B2;
     color: white;
 }
 
@@ -148,7 +152,7 @@ body {
 .search-bar {
     width: 100%;
     padding: 1.2rem 2rem;
-    border: 2px solid var(--primary-color);
+    border: 2px solid #89A8B2;
     border-radius: 30px;
     font-size: 1rem;
     outline: none;
@@ -159,7 +163,7 @@ body {
 }
 
 .search-bar:focus {
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 4px 12px #89A8B2;
 }
 
 .search-btn {
@@ -168,7 +172,7 @@ body {
     background: none;
     border: none;
     font-size: 1.2rem;
-    color: var(--primary-color);
+    color: #89A8B2;
     cursor: pointer;
 }
 
@@ -199,7 +203,7 @@ body {
 }
 
 .profile-card {
-    background: var(--card-bg);
+    background: #B3C8CF;
     border-radius: 15px;
     padding: 1.5rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
@@ -235,7 +239,7 @@ body {
     width: 100%;
     padding: 0.8rem;
     margin-top: 1rem;
-    background-color: var(--primary-color);
+    background-color: #89A8B2;
     color: white;
     border: none;
     border-radius: 8px;
@@ -244,7 +248,7 @@ body {
 }
 
 .hire-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: #89A8B2;
 }
 
 .hire-panel {
@@ -937,7 +941,7 @@ input[type="range"] {
     font-weight: 700;
     color: white;
     /* New rounded material style */
-    background: var(--primary-color);
+    background: #89A8B2;
     padding: 12px 24px;
     border-radius: 25px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
