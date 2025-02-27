@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E5E1DA; /* Light background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+        }
+        .container {
+            max-width: 400px;
+            width: 100%;
+            background: #B3C8CF; /* Medium background color for the form */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center; /* Center text */
+        }
+        h2 {
+            color: #738f98; /* Darker color for the heading */
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center elements horizontally */
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #89A8B2; /* Darker color for labels */
+            text-align: left; /* Align labels to the left */
+            width: 100%; /* Make labels full width */
+        }
+        input[type="email"],
+        input[type="tel"] {
+            width: 90%; /* Set input width */
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #89A8B2; /* Border color */
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+        input[type="email"]:focus,
+        input[type="tel"]:focus {
+            border-color: #B3C8CF; /* Change border color on focus */
+            outline: none; /* Remove default outline */
+        }
+        input[type="submit"] {
+            background-color: #89A8B2; /* Button background color */
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 90%; /* Set button width */
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #90a2a9; /* Button hover color */
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #89A8B2; /* Footer text color */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Contact Information</h2>
+    <form>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div class="footer">We value your privacy.</div>
+</div>
+
+</body>
+<script src="./js/signup.js"></script>
+</html>
