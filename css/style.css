@@ -6,13 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-:root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
-    --text-color: #1f2937;
-    --background-color: #f3f4f6;
-    --card-bg: #ffffff;
-}
+
 
 .dark-theme {
     --text-color: #e5e7eb;
@@ -34,7 +28,7 @@ body {
 .as-header {
     border-radius: 2rem;
     background-color: #89A8B2;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
     margin-bottom: 2rem;
 }
 
@@ -47,11 +41,11 @@ body {
     padding: 1.5rem 2rem;
 }
 
-.logo {
-    background-color: #4B1 64C;
+header .nav-container .logo{
     font-family: "Atkinson Hyperlegible Mono", sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
+    background-color: #89A8B2;
     color: white;
 }
 
